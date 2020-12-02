@@ -78,10 +78,15 @@ button {
   top: 136px;
   right: calc((100vw - 1460px) / 2 - -15px);
   background: rgba(255, 255, 255, 0.9);
-  -webkit-transition: background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  -webkit-transition: background-color 0.3s ease-in-out,
+ -webkit-box-shadow 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out,
+ -webkit-box-shadow 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out,
+ box-shadow 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out,
+ box-shadow 0.3s ease-in-out,
+ -webkit-box-shadow 0.3s ease-in-out;
   padding: 20px;
   width: 180px;
   position: fixed;
@@ -925,7 +930,13 @@ button {
 .form_wrapper {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "email phone" "firstName lastName" "company ." "street city" "state code" "years ." "file file"; }
+  grid-template-areas: "email phone"
+ "firstName lastName"
+ "company ."
+ "street city"
+ "state code"
+ "years ."
+ "file file"; }
   @media (max-width: 1024px) {
     .form_wrapper {
       display: block; }
@@ -1552,8 +1563,10 @@ button {
     background: rgba(73, 117, 255, 0.5);
     -webkit-transform: scale(1);
             transform: scale(1);
-    -webkit-transition: transaorm 0.3s ease-in-out, background-color 0.3s ease-in-out;
-    transition: transaorm 0.3s ease-in-out, background-color 0.3s ease-in-out; }
+    -webkit-transition: transaorm 0.3s ease-in-out,
+ background-color 0.3s ease-in-out;
+    transition: transaorm 0.3s ease-in-out,
+ background-color 0.3s ease-in-out; }
     .blogs_page .pagination_item:hover {
       background: rgba(73, 117, 255, 0.75);
       -webkit-transform: scale(1.1);
@@ -1799,8 +1812,10 @@ button {
       background: rgba(73, 117, 255, 0.5);
       -webkit-transform: scale(1);
               transform: scale(1);
-      -webkit-transition: transaorm 0.3s ease-in-out, background-color 0.3s ease-in-out;
-      transition: transaorm 0.3s ease-in-out, background-color 0.3s ease-in-out; }
+      -webkit-transition: transaorm 0.3s ease-in-out,
+ background-color 0.3s ease-in-out;
+      transition: transaorm 0.3s ease-in-out,
+ background-color 0.3s ease-in-out; }
       .blogs_page .slick-dots li:hover {
         background: rgba(73, 117, 255, 0.75);
         -webkit-transform: scale(1.1);
@@ -2385,21 +2400,25 @@ button {
         height: 17px; } }
 
 @font-face {
+  font-display: swap;
   font-family: "helveticaBlack";
   src: url("../fonts/HelveticaBlack.eot");
   src: url("../fonts/HelveticaBlack.eot") format("embedded-opentype"), url("../fonts/HelveticaBlack.woff") format("woff"), url("../fonts/HelveticaBlack.ttf") format("truetype"); }
 
 @font-face {
+  font-display: swap;
   font-family: "helveticaBold";
   src: url("../fonts/HelveticaBold.eot");
   src: url("../fonts/HelveticaBold.eot") format("embedded-opentype"), url("../fonts/HelveticaBold.woff") format("woff"), url("../fonts/HelveticaBold.ttf") format("truetype"); }
 
 @font-face {
+  font-display: swap;
   font-family: "helveticaMedium";
   src: url("../fonts/HelveticaMedium.eot");
   src: url("../fonts/HelveticaBold.eot") format("embedded-opentype"), url("../fonts/HelveticaBold.woff") format("woff"), url("../fonts/HelveticaBold.ttf") format("truetype"); }
 
 @font-face {
+  font-display: swap;
   font-family: "helveticaRegular";
   src: url("../fonts/HelveticaRegular.eot");
   src: url("../fonts/HelveticaRegular.eot") format("embedded-opentype"), url("../fonts/HelveticaRegular.woff") format("woff"), url("../fonts/HelveticaRegular.ttf") format("truetype"); }
@@ -2486,18 +2505,25 @@ html {
   line-height: 21px;
   -webkit-box-shadow: 0 0 40px rgba(121, 255, 142, 0.15);
           box-shadow: 0 0 40px rgba(121, 255, 142, 0.15);
-  -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; }
+  -webkit-transition: background-color 0.3s ease-in-out,
+ color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out,
+ color 0.3s ease-in-out; }
   .btn:hover {
     background: #fff;
     color: #60CC71; }
 
 .fixed_btn {
   background: #fff;
-  -webkit-transition: background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  -webkit-transition: background-color 0.3s ease-in-out,
+ -webkit-box-shadow 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out,
+ -webkit-box-shadow 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out,
+ box-shadow 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out,
+ box-shadow 0.3s ease-in-out,
+ -webkit-box-shadow 0.3s ease-in-out;
   padding: 20px;
   width: 165px;
   height: 132px;

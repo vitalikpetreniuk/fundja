@@ -78,12 +78,16 @@ $(function () {
 		});
 	}
 
-	[].forEach.call(document.querySelectorAll('img[data-src]'),    function(img) {
-		img.setAttribute('src', img.getAttribute('data-src'));
-		img.onload = function() {
-			img.removeAttribute('data-src');
-		};
-	});
+	$(window).on('load', function(){
+    setTimeout(function(){
+      [].forEach.call(document.querySelectorAll('img[data-src]'),    function(img) {
+        img.setAttribute('src', img.getAttribute('data-src'));
+        img.onload = function() {
+          img.removeAttribute('data-src');
+        };
+      });
+    }, 2000);
+  });
 
 	const mainNav = $("#mainNav");
 	const mainNavMobile = $("#mainNavMobile");
