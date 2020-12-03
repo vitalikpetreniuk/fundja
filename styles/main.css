@@ -78,10 +78,15 @@ button {
   top: 136px;
   right: calc((100vw - 1460px) / 2 - -15px);
   background: rgba(255, 255, 255, 0.9);
-  -webkit-transition: background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  -webkit-transition: background-color 0.3s ease-in-out,
+ -webkit-box-shadow 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out,
+ -webkit-box-shadow 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out,
+ box-shadow 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out,
+ box-shadow 0.3s ease-in-out,
+ -webkit-box-shadow 0.3s ease-in-out;
   padding: 20px;
   width: 180px;
   position: fixed;
@@ -933,7 +938,13 @@ button {
 .form_wrapper {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "email phone" "firstName lastName" "company ." "street city" "state code" "years ." "file file"; }
+  grid-template-areas: "email phone"
+ "firstName lastName"
+ "company ."
+ "street city"
+ "state code"
+ "years ."
+ "file file"; }
   @media (max-width: 1024px) {
     .form_wrapper {
       display: block; }
@@ -1561,8 +1572,10 @@ button {
     background: rgba(73, 117, 255, 0.5);
     -webkit-transform: scale(1);
             transform: scale(1);
-    -webkit-transition: transaorm 0.3s ease-in-out, background-color 0.3s ease-in-out;
-    transition: transaorm 0.3s ease-in-out, background-color 0.3s ease-in-out; }
+    -webkit-transition: transaorm 0.3s ease-in-out,
+ background-color 0.3s ease-in-out;
+    transition: transaorm 0.3s ease-in-out,
+ background-color 0.3s ease-in-out; }
     .blogs_page .pagination_item:hover {
       background: rgba(73, 117, 255, 0.75);
       -webkit-transform: scale(1.1);
@@ -1762,10 +1775,49 @@ button {
     .blogs_page .slick-arrow.slick-prev {
       right: calc(50% + 10px);
       padding: 5px 15px 5px 5px; }
-      .blogs_page .slick-arrow.slick-prev:after {
-        content: "\27F5";
-        font-size: 20px;
-        line-height: 20px; }
+      .blogs_page .slick-arrow
+      {
+        width: 18px;
+        height: 11px;
+        box-sizing: content-box;
+        bottom: -30px;
+      }
+      .blogs_page .slick-arrow.slick-prev:after
+      {
+        content: '';
+        display: block;
+        width: 18px;
+        height: 11px;
+
+        background: url("../images/arrow-left-bl.svg") no-repeat center;
+        background-size: contain;
+        position: absolute;
+        top: 6px;
+        left: 5px;
+      }
+      .blogs_page .slick-arrow.slick-prev:hover:after
+      {
+        background: url("../images/arrow-left-bl-hover.svg") no-repeat center;
+        background-size: contain;
+      }
+      .blogs_page .slick-arrow.slick-next:after
+      {
+        content: '' !important;
+        display: block;
+        width: 18px;
+        height: 11px;
+
+        background: url("../images/arrow-right-bl.svg") no-repeat center;
+        background-size: contain;
+        position: absolute;
+        top: 6px;
+        left: 15px;
+      }
+      .blogs_page .slick-arrow.slick-next:hover:after
+      {
+        background: url("../images/arrow-right-bl-hover.svg") no-repeat center;
+        background-size: contain;
+      }
     .blogs_page .slick-arrow.slick-next {
       left: calc(50% + 70px);
       padding: 5px 5px 5px 15px; }
@@ -1808,8 +1860,10 @@ button {
       background: rgba(73, 117, 255, 0.5);
       -webkit-transform: scale(1);
               transform: scale(1);
-      -webkit-transition: transaorm 0.3s ease-in-out, background-color 0.3s ease-in-out;
-      transition: transaorm 0.3s ease-in-out, background-color 0.3s ease-in-out; }
+      -webkit-transition: transaorm 0.3s ease-in-out,
+ background-color 0.3s ease-in-out;
+      transition: transaorm 0.3s ease-in-out,
+ background-color 0.3s ease-in-out; }
       .blogs_page .slick-dots li:hover {
         background: rgba(73, 117, 255, 0.75);
         -webkit-transform: scale(1.1);
@@ -1834,14 +1888,20 @@ button {
     line-height: 1.3;
     margin-bottom: 0; }
   .blogs_page .section.banner {
-    background-image: url("../images/banner_img.svg");
+    background: rgba(73, 117, 251, 0.05) url("../images/banner_img.svg");
     background-size: 350px;
     background-position: bottom 0 right 0;
     background-repeat: no-repeat;
     max-height: initial;
     height: auto;
     display: block;
-    padding: 100px 20px; }
+    padding: 80px 0 100px;
+  }
+  .blogs_page .section.banner > div
+  {
+    padding: 0 20px;
+    background: none;
+  }
     .blogs_page .section.banner:after {
       content: none; }
     .blogs_page .section.banner .banner_text {
@@ -1855,7 +1915,7 @@ button {
       text-align: center;
       margin-bottom: 15px; }
       .blogs_page .section.banner .banner_title .title--green {
-        color: #69D87A; }
+        color: rgb(126,253,147); }
     .blogs_page .section.banner .btn {
       margin-bottom: 196px; }
   .blogs_page .search {
@@ -2499,18 +2559,25 @@ html {
   line-height: 21px;
   -webkit-box-shadow: 0 0 40px rgba(121, 255, 142, 0.15);
           box-shadow: 0 0 40px rgba(121, 255, 142, 0.15);
-  -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; }
+  -webkit-transition: background-color 0.3s ease-in-out,
+ color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out,
+ color 0.3s ease-in-out; }
   .btn:hover {
     background: #fff;
     color: #60CC71; }
 
 .fixed_btn {
   background: #fff;
-  -webkit-transition: background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  -webkit-transition: background-color 0.3s ease-in-out,
+ -webkit-box-shadow 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out,
+ -webkit-box-shadow 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out,
+ box-shadow 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out,
+ box-shadow 0.3s ease-in-out,
+ -webkit-box-shadow 0.3s ease-in-out;
   padding: 20px;
   width: 165px;
   height: 132px;
