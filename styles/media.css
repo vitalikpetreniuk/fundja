@@ -224,6 +224,8 @@
     .footer_logo img {
       width: 100%; }
   .up_btn {
+    width: 40px;
+    height: 40px;
     right: -26px;
     top: -8px; }
   .flip_card--first .back,
@@ -536,7 +538,7 @@
       left: -4px; }
     .testimonials_card .rect_top_right {
       top: -4px;
-      left: -4px; }
+      right: -4px; }
   .testimonials_card:focus,
   .testimonials_list:focus {
     outline: none; }
@@ -608,11 +610,12 @@
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%); }
   .section.section_calculator {
+    text-align: left;
     padding-bottom: 77px; }
     .section.section_calculator .title {
       text-align: left !important;
       max-width: 80%;
-      margin: 0 auto 24px;
+      margin-bottom: 24px;
       font-size: 35px;
       line-height: 35px; }
     .section.section_calculator .form_control {

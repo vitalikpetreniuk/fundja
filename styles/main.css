@@ -58,8 +58,8 @@ button {
   left: 0;
   right: 0;
   background: rgba(255, 255, 255, 0.85);
-  -webkit-box-shadow: 0 0 40px rgba(121, 255, 142, 0.15);
-          box-shadow: 0 0 40px rgba(121, 255, 142, 0.15);
+  -webkit-box-shadow: 1px 4px 13px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 4px 13px rgba(0, 0, 0, 0.1);
   width: 100%;
   height: 120px;
   padding: 35px 0;
@@ -78,15 +78,10 @@ button {
   top: 136px;
   right: calc((100vw - 1460px) / 2 - -15px);
   background: rgba(255, 255, 255, 0.9);
-  -webkit-transition: background-color 0.3s ease-in-out,
- -webkit-box-shadow 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out,
- -webkit-box-shadow 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out,
- box-shadow 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out,
- box-shadow 0.3s ease-in-out,
- -webkit-box-shadow 0.3s ease-in-out;
+  -webkit-transition: background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
   padding: 20px;
   width: 180px;
   position: fixed;
@@ -647,6 +642,12 @@ button {
   width: 1250px;
   margin: auto; }
 
+.flip_text {
+  font-family: helveticaMedium, sans-serif;
+  font-size: 23px;
+  line-height: 130%;
+  color: rgba(39, 39, 39, 0.8); }
+
 .flip_card {
   width: 257px;
   height: 290px; }
@@ -681,11 +682,14 @@ button {
     padding: 37px 50px; }
   .flip_card.flip_card--third .front img {
     margin-bottom: 30px; }
+  .flip_card.flip_card--first .back {
+    padding: 80px 18px 50px 18px;
+    line-height: 1.33; }
   .flip_card.flip_card--second .back {
-    padding: 80px 17px;
+    padding: 84px 14px 50px 14px;
     line-height: 1.33; }
   .flip_card.flip_card--third .back {
-    padding: 86px 23px;
+    padding: 84px 19px 50px 20px;
     line-height: 1.33; }
 
 .flip_card--first .back,
@@ -817,10 +821,9 @@ button {
     line-height: 1; }
   .section.user-data-form .btn {
     margin: 0 auto;
-    border-right: 28px;
     font-family: helveticaBlack, sans-serif;
     font-size: 25px;
-    line-height: 25px; }
+    line-height: 18px; }
   .section.user-data-form .drop_container .form__error,
   .section.user-data-form .form__error {
     left: 0;
@@ -930,13 +933,7 @@ button {
 .form_wrapper {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "email phone"
- "firstName lastName"
- "company ."
- "street city"
- "state code"
- "years ."
- "file file"; }
+  grid-template-areas: "email phone" "firstName lastName" "company ." "street city" "state code" "years ." "file file"; }
   @media (max-width: 1024px) {
     .form_wrapper {
       display: block; }
@@ -979,7 +976,7 @@ button {
   width: 82px;
   height: 82px;
   margin-left: 30px;
-  border: 1.5px dashed rgba(50, 77, 171, 0.5);
+  border: 2.3px dashed rgba(50, 77, 171, 0.4);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 10px;
@@ -1504,6 +1501,7 @@ button {
   .blogs_page .card_body {
     padding: 25px 32px 20px; }
   .blogs_page .card_title {
+    display: block;
     font-size: 25px;
     line-height: 25px;
     color: #4975FB;
@@ -1563,10 +1561,8 @@ button {
     background: rgba(73, 117, 255, 0.5);
     -webkit-transform: scale(1);
             transform: scale(1);
-    -webkit-transition: transaorm 0.3s ease-in-out,
- background-color 0.3s ease-in-out;
-    transition: transaorm 0.3s ease-in-out,
- background-color 0.3s ease-in-out; }
+    -webkit-transition: transaorm 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    transition: transaorm 0.3s ease-in-out, background-color 0.3s ease-in-out; }
     .blogs_page .pagination_item:hover {
       background: rgba(73, 117, 255, 0.75);
       -webkit-transform: scale(1.1);
@@ -1812,10 +1808,8 @@ button {
       background: rgba(73, 117, 255, 0.5);
       -webkit-transform: scale(1);
               transform: scale(1);
-      -webkit-transition: transaorm 0.3s ease-in-out,
- background-color 0.3s ease-in-out;
-      transition: transaorm 0.3s ease-in-out,
- background-color 0.3s ease-in-out; }
+      -webkit-transition: transaorm 0.3s ease-in-out, background-color 0.3s ease-in-out;
+      transition: transaorm 0.3s ease-in-out, background-color 0.3s ease-in-out; }
       .blogs_page .slick-dots li:hover {
         background: rgba(73, 117, 255, 0.75);
         -webkit-transform: scale(1.1);
@@ -2495,8 +2489,8 @@ html {
   cursor: pointer;
   background: #69D87A;
   height: 65px;
-  border: 2px solid #69D87A;
-  padding: 20px 37px;
+  border: 4px solid #69D87A;
+  padding: 18px 37px;
   border-radius: 30px;
   color: #fff;
   font-family: helveticaBold, sans-serif;
@@ -2505,25 +2499,18 @@ html {
   line-height: 21px;
   -webkit-box-shadow: 0 0 40px rgba(121, 255, 142, 0.15);
           box-shadow: 0 0 40px rgba(121, 255, 142, 0.15);
-  -webkit-transition: background-color 0.3s ease-in-out,
- color 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out,
- color 0.3s ease-in-out; }
+  -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; }
   .btn:hover {
     background: #fff;
     color: #60CC71; }
 
 .fixed_btn {
   background: #fff;
-  -webkit-transition: background-color 0.3s ease-in-out,
- -webkit-box-shadow 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out,
- -webkit-box-shadow 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out,
- box-shadow 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out,
- box-shadow 0.3s ease-in-out,
- -webkit-box-shadow 0.3s ease-in-out;
+  -webkit-transition: background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
   padding: 20px;
   width: 165px;
   height: 132px;
@@ -2539,9 +2526,9 @@ html {
     font-family: helveticaBold, sans-serif;
     font-size: 14px;
     line-height: 1;
-    padding: 15px 30px;
+    padding: 12px 30px;
     height: auto;
-    width: 100%; }
+    width: auto; }
     .fixed_btn .btn:hover {
       color: #fff;
       background: #69D87A; }
@@ -2557,7 +2544,9 @@ html {
   font-family: helveticaBold, sans-serif;
   -webkit-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
-  font-size: 14px; }
+  line-height: 1.35;
+  font-size: 14px;
+  margin-bottom: 10px; }
 
 .cash_title,
 .title {
@@ -2759,8 +2748,8 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 40px;
-  height: 40px;
+  width: 54px;
+  height: 54px;
   cursor: pointer;
   position: absolute;
   right: -17px;

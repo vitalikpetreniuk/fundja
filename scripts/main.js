@@ -48,7 +48,7 @@ $(function () {
 	slick_slider();
 	if ($('.mobile_review').length) {
 		$('.mobile_review').slick({
-			autoplay: true,
+			// autoplay: true,
 			autoplaySpeed: 2000,
 			centerMode: true,
 			centerPadding: 0,
@@ -92,13 +92,13 @@ $(function () {
 	const mainNav = $("#mainNav");
 	const mainNavMobile = $("#mainNavMobile");
 
-	$("#menuOpen").on("click", function (e) {
+	$("#menuOpen").on("mouseover", function (e) {
 		e.preventDefault();
 		$(".header").addClass('menu_show');
 		mainNav.addClass('nav_active_l');
 		mainNav.removeClass('nav_active_r');
 	});
-	$("#menuClose").on("click", function (e) {
+	mainNav.on("mouseleave", function (e) {
 		e.preventDefault();
 		$(".header").removeClass('menu_show');
 		mainNav.removeClass('nav_active_l');
