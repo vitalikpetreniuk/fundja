@@ -98,7 +98,7 @@
 			</svg>
 
 		</a>
-		<nav class="main_nav">
+		<nav id="mainNav"  class="main_nav">
 			<button type="button" id="menuOpen" class="nav_btn_open">
 				<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<rect class="rect" width="50" height="50" rx="10" fill="white"/>
@@ -107,7 +107,6 @@
 					<rect x="23" y="34" width="15" height="4" rx="2" fill="#4975FB"/>
 				</svg>
 			</button>
-
 			<button id="menuClose" class="nav_btn_close">
 				<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<rect class="rect" width="50" height="50" rx="10" fill="white"/>
@@ -117,8 +116,7 @@
 					      fill="#4975FB"/>
 				</svg>
 			</button>
-
-			<ul id="mainNav" class="nav_list">
+			<ul class="nav_list">
 				<li class="nav_item active">
 					<a href="#home" class="nav_link">Home</a>
 				</li>
@@ -312,70 +310,61 @@
 		</div>
 		<ul class="flip_list">
 			<li id="card1" class="flip_card flip_card--first">
-
 				<div class="front">
-					<!--					md screen sm screen-->
-					<div
-							data-aos-anchor="#hiw"
-							data-aos="flip-right"
-							data-aos-delay="2500"
-							data-aos-duration="500"
-							data-aos-easing="ease-in-out"
-							class="rect rect_top_left--top  md_visible sm_visible"
+					<!--					lg-->
+					<svg class="rect_top_left lg_visible"
+							xmlns="http://www.w3.org/2000/svg"
+							width="113" height="113"
+							viewBox="0 0 113 113" fill="none"
 					>
-						<svg xmlns="http://www.w3.org/2000/svg" width="103" height="102" viewBox="0 0 103 102"
-						     fill="none">
-							<path fill-rule="evenodd" clip-rule="evenodd"
-							      d="M0.500275 102.001L22.9995 102.001C66.9062 102.001 102.5 66.4075 102.5 22.5009L102.5 -7.62939e-06L64.9995 -4.35104e-06L64.9995 22.5009C64.9995 45.6968 46.1955 64.5009 22.9995 64.5009L0.500271 64.5009L0.500275 102.001Z"
-							      fill="#4975FB" fill-opacity="0.9"/>
-						</svg>
-					</div>
-					<div
-							data-aos-anchor="#hiw"
-							data-aos="flip-left"
-							data-aos-delay="2000"
-							data-aos-duration="500"
-							data-aos-easing="ease-in-out"
-							class="rect rect_bottom_right  md_visible sm_visible"
+						<path opacity="0.9" fill-rule="evenodd" clip-rule="evenodd" d="M0.14344 112.855L7.00002 112.855C65.5422 112.855 113 65.3972 113 6.85498L113 -0.000137329L63 -0.000132958L63 6.85498C63 37.7829 37.9279 62.855 7.00001 62.855L0.143436 62.855L0.14344 112.855Z" fill="#4975FB"/>
+					</svg>
+					<svg class="rect_bottom_right lg_visible"
+							xmlns="http://www.w3.org/2000/svg"
+							width="46" height="51"
+							viewBox="0 0 46 51" fill="none"
 					>
-						<svg xmlns="http://www.w3.org/2000/svg" width="41" height="44" viewBox="0 0 41 44" fill="none">
-							<path d="M0.5 43.75L0.499999 23.125C0.499999 10.4915 10.7415 0.25 23.375 0.249999L41 0.249998L41 20.875C41 33.5085 30.7585 43.75 18.125 43.75L0.5 43.75Z"
-							      fill="#4975FB" fill-opacity="0.9"/>
-						</svg>
-					</div>
+						<path opacity="0.9" d="M0 50.1101L-8.41786e-07 30.8523C-1.57809e-06 14.0076 13.6553 0.352279 30.5 0.352278L46 0.352278L46 19.6101C46 36.4548 32.3447 50.1101 15.5 50.1101L0 50.1101Z" fill="#4975FB"/>
+					</svg>
+					<!--					md-->
+					<svg class="rect_top_left lg_hidden"
+							width="84" height="84" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path opacity="0.9" fill-rule="evenodd" clip-rule="evenodd" d="M0.106102 83.4336L5.17525 83.4336C48.4555 83.4336 83.541 48.3481 83.541 5.06785L83.541 -0.000175476L46.576 -0.000172244L46.576 5.06785C46.576 27.9329 28.0403 46.4686 5.17524 46.4686L0.106099 46.4686L0.106102 83.4336Z" fill="#4975FB"/>
+					</svg>
+					<svg class="rect_bottom_right lg_hidden"
+							width="35" height="38" viewBox="0 0 35 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path opacity="0.9" d="M0.992188 37.739L0.992187 23.5017C0.992186 11.0484 11.0876 0.953071 23.5408 0.953071L35 0.95307L35 15.1904C35 27.6436 24.9046 37.739 12.4513 37.739L0.992188 37.739Z" fill="#4975FB"/>
+					</svg>
+
 					<img src="./images/hiw_1.png" alt="img">
-					<h3 class="flip_title">Аpplication</h3>
+					<h3 class="flip_title">Application</h3>
 				</div>
 				<div class="back">
-					<!--					md screen sm screen-->
-					<div
-							data-aos-anchor="#hiw"
-							data-aos="flip-right"
-							data-aos-delay="2500"
-							data-aos-duration="500"
-							data-aos-easing="ease-in-out"
-							class="rect rect_top_left--top  md_visible sm_visible"
+					<!--					lg-->
+					<svg class="rect_top_right lg_visible"
+							xmlns="http://www.w3.org/2000/svg"
+							width="87" height="87"
+							viewBox="0 0 87 87" fill="none"
 					>
-						<svg xmlns="http://www.w3.org/2000/svg" width="103" height="102" viewBox="0 0 103 102"
-						     fill="none">
-							<path fill-rule="evenodd" clip-rule="evenodd"
-							      d="M0.500275 102.001L22.9995 102.001C66.9062 102.001 102.5 66.4075 102.5 22.5009L102.5 -7.62939e-06L64.9995 -4.35104e-06L64.9995 22.5009C64.9995 45.6968 46.1955 64.5009 22.9995 64.5009L0.500271 64.5009L0.500275 102.001Z"
-							      fill="#4975FB" fill-opacity="0.9"/>
-						</svg>
-					</div>
-					<div
-							data-aos-anchor="#hiw"
-							data-aos="flip-left"
-							data-aos-delay="2000"
-							data-aos-duration="500"
-							data-aos-easing="ease-in-out"
-							class="rect rect_bottom_right  md_visible sm_visible"
+						<path opacity="0.9" fill-rule="evenodd" clip-rule="evenodd" d="M0.222657 5.34058e-05C7.44098 44.376 42.4788 79.4142 86.8546 86.6331L86.8546 35.3263C70.1492 29.9058 56.9493 16.7056 51.5292 5.40176e-05L0.222657 5.34058e-05Z" fill="#4975FB"/>
+					</svg>
+					<svg class="rect_bottom_left lg_visible"
+							xmlns="http://www.w3.org/2000/svg"
+							width="50" height="47"
+							viewBox="0 0 50 47" fill="none"
 					>
-						<svg xmlns="http://www.w3.org/2000/svg" width="41" height="44" viewBox="0 0 41 44" fill="none">
-							<path d="M0.5 43.75L0.499999 23.125C0.499999 10.4915 10.7415 0.25 23.375 0.249999L41 0.249998L41 20.875C41 33.5085 30.7585 43.75 18.125 43.75L0.5 43.75Z"
-							      fill="#4975FB" fill-opacity="0.9"/>
-						</svg>
-					</div>
+						<path opacity="0.9" d="M0 0.000732422L19.2578 0.000732422C36.1025 0.000732422 49.7578 13.6561 49.7578 30.5007V46.327H30.5C13.6553 46.327 0 32.6717 0 15.827L0 0.000732422Z" fill="#4975FB"/>
+					</svg>
+					<!--					md-->
+					<svg class="rect_top_right lg_hidden"
+							width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path opacity="0.9" fill-rule="evenodd" clip-rule="evenodd" d="M0.844727 -0.000114441C6.1812 32.8073 32.0849 58.7111 64.8922 64.0479L64.8922 26.1169C52.5416 22.1097 42.7827 12.3506 38.7756 -0.000113989L0.844727 -0.000114441Z" fill="#4975FB"/>
+					</svg>
+					<svg class="rect_bottom_left lg_hidden"
+							width="37" height="35" viewBox="0 0 37 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path opacity="0.9" d="M0 0.650391L14.2373 0.650391C26.6906 0.650391 36.7859 10.7458 36.7859 23.199V34.8994H22.5486C10.0954 34.8994 0 24.804 0 12.3507L0 0.650391Z" fill="#4975FB"/>
+					</svg>
+
 					<p class="flip-text">
 						Just ask a couple of simple questions about your business to start the process.
 					</p>
@@ -383,168 +372,145 @@
 			</li>
 			<li id="card2" class="flip_card flip_card--second">
 				<div class="front">
-					<!--					md screen sm screen-->
-					<div
-							data-aos-anchor="#hiw"
-							data-aos="flip-right"
-							data-aos-delay="1700"
-							data-aos-duration="500"
-							data-aos-easing="ease-in-out"
-							class="rect rect_bottom_left md_visible sm_visible"
+					<!--					lg-->
+					<svg class="rect_bottom_right lg_visible"
+							xmlns="http://www.w3.org/2000/svg"
+							width="85" height="86"
+							viewBox="0 0 85 86" fill="none"
 					>
-						<svg xmlns="http://www.w3.org/2000/svg" width="38" height="36" viewBox="0 0 38 36" fill="none">
-							<path opacity="0.9"
-							      d="M37.5684 35.3328L23.125 35.3328C10.4915 35.3328 0.249988 25.0913 0.249987 12.4578L0.249986 0.588077L14.6934 0.588076C27.3269 0.588075 37.5684 10.8296 37.5684 23.4631L37.5684 35.3328Z"
-							      fill="#4975FB"/>
-						</svg>
+						<path opacity="0.9" fill-rule="evenodd" clip-rule="evenodd" d="M85.0008 0.263443C39.0101 2.25044 2.0687 39.1404 -1.4835e-05 85.1099L50.1184 85.1099C52.0201 66.7669 66.6358 52.1996 85.0008 50.3725L85.0008 0.263443Z" fill="#4975FB"/>
+					</svg>
+					<svg class="rect_top_right lg_visible"
+							xmlns="http://www.w3.org/2000/svg"
+							width="49" height="46"
+							viewBox="0 0 49 46" fill="none"
+					>
+						<path opacity="0.9" d="M49 46.0002L30.5 46.0002C13.6553 46.0002 -1.19379e-06 32.3449 -2.66639e-06 15.5002L-4.02145e-06 0.000248424L18.5 0.000246807C35.3447 0.000245334 49 13.6556 49 30.5002L49 46.0002Z" fill="#4975FB"/>
+					</svg>
+					<svg class="rect_bottom_left lg_visible"
+							xmlns="http://www.w3.org/2000/svg"
+							width="50" height="48" viewBox="0 0 50 48"
+							fill="none">
+						<path opacity="0.9" d="M49.7578 47.1106L30.5 47.1106C13.6553 47.1106 -1.64526e-05 33.4553 -1.79252e-05 16.6106L-1.93088e-05 0.784348L19.2578 0.784346C36.1025 0.784345 49.7578 14.4397 49.7578 31.2843L49.7578 47.1106Z" fill="#4975FB"/>
+					</svg>
+					<!--					md-->
+					<svg class="rect_top_right lg_hidden"
+					     width="37" height="35" viewBox="0 0 37 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path opacity="0.9" d="M36.999 34.7468L23.322 34.7468C10.8688 34.7468 0.77346 24.6515 0.773458 12.1983L0.773457 0.739158L14.4505 0.739157C26.9037 0.739156 36.999 10.8345 36.999 23.2877L36.999 34.7468Z" fill="#4975FB"/>
+					</svg>
+					<svg  class="rect_bottom_right lg_hidden"
+							width="63" height="64" viewBox="0 0 63 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path opacity="0.9" fill-rule="evenodd" clip-rule="evenodd" d="M63.0001 0.750499C28.9992 2.21945 1.68856 29.492 0.159169 63.4772L37.2115 63.4772C38.6175 49.9163 49.4228 39.1468 63.0001 37.796L63.0001 0.750499Z" fill="#4975FB"/>
+					</svg>
+					<svg class="rect_bottom_left lg_hidden"
+							width="37" height="35" viewBox="0 0 37 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path opacity="0.9" d="M36.7861 34.4778L22.5489 34.4778C10.0957 34.4778 0.000308108 24.3825 0.000307019 11.9292L0.000305996 0.228916L14.2376 0.228914C26.6908 0.228913 36.7861 10.3242 36.7861 22.7775L36.7861 34.4778Z" fill="#4975FB"/>
+					</svg>
 
-					</div>
-					<div
-							data-aos-anchor="#hiw"
-							data-aos="flip-lef"
-							data-aos-delay="160"
-							data-aos-duration="50"
-							data-aos-easing="ease-in-out"
-							class="rect rect_top_right  md_visible sm_visible"
-					>
-						<svg xmlns="http://www.w3.org/2000/svg" width="44" height="41" viewBox="0 0 44 41" fill="none">
-							<path d="M0.5 0.0578613H21.125C33.7585 0.0578613 44 10.2993 44 22.9329V40.5579H23.375C10.7415 40.5579 0.5 30.3164 0.5 17.6829V0.0578613Z"
-							      fill="#4975FB" fill-opacity="0.9"/>
-						</svg>
-					</div>
-					<div
-							data-aos-anchor="#hiw"
-							data-aos="flip-lef"
-							data-aos-delay="160"
-							data-aos-duration="50"
-							data-aos-easing="ease-in-out"
-							class="rect rect_bottom_right  md_visible sm_visible"
-					>
-						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="65" viewBox="0 0 64 65" fill="none">
-							<path opacity="0.9" fill-rule="evenodd" clip-rule="evenodd"
-							      d="M64.0006 0.697277C29.5072 2.18729 1.80085 29.855 0.249501 64.3325L37.8383 64.3325C39.2644 50.5749 50.2264 39.6492 64.0006 38.2791L64.0006 0.697277Z"
-							      fill="#4975FB"/>
-						</svg>
-					</div>
+
 					<img src="./images/hiw_2.png" alt="img">
 					<h3 class="flip_title">Processing</h3>
 				</div>
 				<div class="back">
-					<!--					md screen sm screen-->
-					<div
-							data-aos-anchor="#hiw"
-							data-aos="flip-right"
-							data-aos-delay="1700"
-							data-aos-duration="500"
-							data-aos-easing="ease-in-out"
-							class="rect rect_bottom_left md_visible sm_visible"
+					<!--					lg-->
+					<svg class="rect_top_left lg_visible"
+							xmlns="http://www.w3.org/2000/svg"
+							width="87" height="87"
+							viewBox="0 0 87 87" fill="none"
 					>
-						<svg xmlns="http://www.w3.org/2000/svg" width="38" height="36" viewBox="0 0 38 36" fill="none">
-							<path opacity="0.9"
-							      d="M37.5684 35.3328L23.125 35.3328C10.4915 35.3328 0.249988 25.0913 0.249987 12.4578L0.249986 0.588077L14.6934 0.588076C27.3269 0.588075 37.5684 10.8296 37.5684 23.4631L37.5684 35.3328Z"
-							      fill="#4975FB"/>
-						</svg>
+						<path opacity="0.9" fill-rule="evenodd" clip-rule="evenodd" d="M-0.000282288 86.6333C44.3758 79.4149 79.414 44.377 86.6328 0.00106812L35.3261 0.00106363C29.9057 16.7066 16.7054 29.9067 -0.000277802 35.3268L-0.000282288 86.6333Z" fill="#4975FB"/>
+					</svg>
+					<svg class="rect_bottom_left lg_visible"
+							xmlns="http://www.w3.org/2000/svg"
+							width="50" height="48"
+							viewBox="0 0 50 48" fill="none"
+					>
+						<path opacity="0.9" d="M49.7578 47.1113L30.5 47.1113C13.6553 47.1113 -1.64526e-05 33.456 -1.79252e-05 16.6113L-1.93088e-05 0.78508L19.2578 0.785079C36.1025 0.785077 49.7578 14.4404 49.7578 31.2851L49.7578 47.1113Z" fill="#4975FB"/>
+					</svg>
+					<svg class="rect_top_right lg_visible"
+							xmlns="http://www.w3.org/2000/svg"
+							width="50" height="47"
+							viewBox="0 0 50 47"
+							fill="none">
+						<path opacity="0.9" d="M50 46.3262L30.2422 46.3262C13.6736 46.3262 0.242171 32.8947 0.24217 16.3262L0.242168 -7.57587e-05L20 -7.7486e-05C36.5685 -7.89344e-05 50 13.4314 50 29.9999L50 46.3262Z" fill="#4975FB"/>
+					</svg>
+					<!--					nd-->
+					<svg class="rect_top_left lg_hidden"
+					     width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path opacity="0.9" fill-rule="evenodd" clip-rule="evenodd" d="M0.714607 64.1443C33.571 58.7997 59.5136 32.8572 64.8584 0.000907898L26.8705 0.000904577C22.8571 12.3698 13.0836 22.1432 0.714611 26.1564L0.714607 64.1443Z" fill="#4975FB"/>
+					</svg>
+					<svg class="rect_bottom_left lg_hidden"
+					     width="37" height="35" viewBox="0 0 37 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path opacity="0.9" d="M37 34.3003L22.3711 34.3003C10.1036 34.3003 0.158816 24.3555 0.158815 12.088L0.158814 -0.000115035L14.7877 -0.000116314C27.0552 -0.000117386 37 9.94466 37 22.2122L37 34.3003Z" fill="#4975FB"/>
+					</svg>
+					<svg class="rect_top_right lg_hidden"
+							width="38" height="36" viewBox="0 0 38 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path opacity="0.9" d="M37.5547 35.061L23.296 35.061C10.824 35.061 0.713504 24.9505 0.713503 12.4785L0.713502 0.760627L14.9722 0.760626C27.4442 0.760625 37.5547 10.8712 37.5547 23.3431L37.5547 35.061Z" fill="#4975FB"/>
+					</svg>
 
-					</div>
-					<div
-							data-aos-anchor="#hiw"
-							data-aos="flip-lef"
-							data-aos-delay="160"
-							data-aos-duration="50"
-							data-aos-easing="ease-in-out"
-							class="rect rect_top_right  md_visible sm_visible"
-					>
-						<svg xmlns="http://www.w3.org/2000/svg" width="44" height="41" viewBox="0 0 44 41" fill="none">
-							<path d="M0.5 0.0578613H21.125C33.7585 0.0578613 44 10.2993 44 22.9329V40.5579H23.375C10.7415 40.5579 0.5 30.3164 0.5 17.6829V0.0578613Z"
-							      fill="#4975FB" fill-opacity="0.9"/>
-						</svg>
-					</div>
-					<div
-							data-aos-anchor="#hiw"
-							data-aos="flip-lef"
-							data-aos-delay="160"
-							data-aos-duration="50"
-							data-aos-easing="ease-in-out"
-							class="rect rect_bottom_right  md_visible sm_visible"
-					>
-						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="65" viewBox="0 0 64 65" fill="none">
-							<path opacity="0.9" fill-rule="evenodd" clip-rule="evenodd"
-							      d="M64.0006 0.697277C29.5072 2.18729 1.80085 29.855 0.249501 64.3325L37.8383 64.3325C39.2644 50.5749 50.2264 39.6492 64.0006 38.2791L64.0006 0.697277Z"
-							      fill="#4975FB"/>
-						</svg>
-					</div>
 					<p class="flip-text">
 						Wait for a short period of time to finish the processing and get funded.
 					</p>
 				</div>
 			</li>
 			<li id="card3" class="flip_card flip_card--third">
-
 				<div class="front">
-					<!--					md screen sm screen-->
-					<div
-							data-aos-anchor="#hiw"
-							data-aos="flip-lef"
-							data-aos-delay="160"
-							data-aos-duration="50"
-							data-aos-easing="ease-in-out"
-							class="rect rect_top_left  md_visible sm_visible"
+<!--					lg-->
+					<svg class="rect_top_left lg_visible"
+							xmlns="http://www.w3.org/2000/svg"
+							width="47" height="50" viewBox="0 0 47 50"
+							fill="none"
 					>
-						<svg xmlns="http://www.w3.org/2000/svg" width="35" height="38" viewBox="0 0 35 38" fill="none">
-							<path opacity="0.9"
-							      d="M0.250977 37.5684L0.250977 23.125C0.250977 10.4915 10.4925 0.249989 23.126 0.249989H34.751V14.6934C34.751 27.3269 24.5095 37.5684 11.876 37.5684H0.250977Z"
-							      fill="#4975FB"/>
-						</svg>
-					</div>
-					<div
-							data-aos-anchor="#hiw"
-							data-aos="flip-lef"
-							data-aos-delay="160"
-							data-aos-duration="50"
-							data-aos-easing="ease-in-out"
-							class="rect rect_bottom_left  md_visible sm_visible"
+						<path opacity="0.9" d="M0.00292969 49.7581L0.00292969 30.5002C0.00292969 13.6556 13.6582 0.000228882 30.5029 0.000228882L46.0029 0.000228882L46.0029 19.258C46.0029 36.1027 32.3476 49.7581 15.5029 49.7581L0.00292969 49.7581Z" fill="#4975FB"/>
+					</svg>
+					<svg class="rect_bottom_left lg_visible"
+							xmlns="http://www.w3.org/2000/svg"
+							width="85" height="86" viewBox="0 0 85 86"
+							fill="none"
 					>
-						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="65" viewBox="0 0 64 65" fill="none">
-							<path opacity="0.9" fill-rule="evenodd" clip-rule="evenodd"
-							      d="M63.9438 64.0833C63.5182 29.0964 35.2362 0.814416 0.249218 0.388913L0.249216 37.8957C14.5247 38.3113 26.0213 49.8079 26.4371 64.0833L63.9438 64.0833Z"
-							      fill="#4975FB"/>
-						</svg>
-					</div>
+						<path opacity="0.9" fill-rule="evenodd" clip-rule="evenodd" d="M84.9248 85.1111C84.3571 38.4623 46.6483 0.753394 -0.000450134 0.185543L-0.00045232 50.1946C19.033 50.7493 34.3613 66.0777 34.9158 85.1111L84.9248 85.1111Z" fill="#4975FB"/>
+					</svg>
+					<!--					md-->
+					<svg class="rect_bottom_left lg_hidden"
+							width="63" height="64" viewBox="0 0 63 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path opacity="0.9" fill-rule="evenodd" clip-rule="evenodd" d="M62.7842 63.2151C62.3645 28.7279 34.4864 0.849888 -0.000797272 0.430295L-0.000798888 37.4016C14.0706 37.8114 25.4029 49.1437 25.8129 63.2151L62.7842 63.2151Z" fill="#4975FB"/>
+					</svg>
+					<svg class="rect_top_left lg_hidden"
+							width="35" height="38" viewBox="0 0 35 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path opacity="0.9" d="M0.00195312 37.2634L0.00195313 23.0263C0.00195313 10.5731 10.0972 0.477859 22.5504 0.477859H34.0094V14.715C34.0094 27.1682 23.9141 37.2634 11.461 37.2634H0.00195312Z" fill="#4975FB"/>
+					</svg>
+
 					<img src="./images/hiw_3.png" alt="img">
 					<h3 class="flip_title">Get Funds!</h3>
 				</div>
 				<div class="back">
-					<!--					md screen-->
-					<div
-							data-aos-anchor="#hiw"
-							data-aos="flip-lef"
-							data-aos-delay="160"
-							data-aos-duration="50"
-							data-aos-easing="ease-in-out"
-							class="rect rect_top_left  md_visible sm_visible"
+					<!--					lg-->
+					<svg  class="rect_bottom_right lg_visible"
+							xmlns="http://www.w3.org/2000/svg"
+                          width="85" height="86" viewBox="0 0 85 86"
+                          fill="none"
 					>
-						<svg xmlns="http://www.w3.org/2000/svg" width="35" height="38" viewBox="0 0 35 38" fill="none">
-							<path opacity="0.9"
-							      d="M0.250977 37.5684L0.250977 23.125C0.250977 10.4915 10.4925 0.249989 23.126 0.249989H34.751V14.6934C34.751 27.3269 24.5095 37.5684 11.876 37.5684H0.250977Z"
-							      fill="#4975FB"/>
-						</svg>
-					</div>
-					<div
-							data-aos-anchor="#hiw"
-							data-aos="flip-lef"
-							data-aos-delay="160"
-							data-aos-duration="50"
-							data-aos-easing="ease-in-out"
-							class="rect rect_bottom_left  md_visible sm_visible"
+						<path opacity="0.9" fill-rule="evenodd" clip-rule="evenodd" d="M84.9285 0.186538C38.2797 0.754185 0.570772 38.463 0.00291484 85.1118L50.012 85.1118C50.5666 66.0784 65.8951 50.7501 84.9285 50.1956L84.9285 0.186538Z" fill="#4975FB"/>
+					</svg>
+					<svg class="rect_top_right lg_visible"
+							xmlns="http://www.w3.org/2000/svg"
+							width="51" height="47"
+							viewBox="0 0 51 47" fill="none"
 					>
-						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="65" viewBox="0 0 64 65" fill="none">
-							<path opacity="0.9" fill-rule="evenodd" clip-rule="evenodd"
-							      d="M63.9438 64.0833C63.5182 29.0964 35.2362 0.814416 0.249218 0.388913L0.249216 37.8957C14.5247 38.3113 26.0213 49.8079 26.4371 64.0833L63.9438 64.0833Z"
-							      fill="#4975FB"/>
-						</svg>
-					</div>
+						<path opacity="0.9" d="M0.00292969 0.000976562L20.0029 0.000976563C36.5715 0.000976563 50.0029 13.4324 50.0029 30.001V47.001H30.5029C13.6582 47.001 0.00292969 33.3457 0.00292969 16.501L0.00292969 0.000976562Z" fill="#4975FB"/>
+					</svg>
+					<!--					md-->
+					<svg class="rect_top_right lg_hidden"
+							width="38" height="36" viewBox="0 0 38 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path opacity="0.9" d="M0.923828 0.715088L15.7543 0.715088C28.0402 0.715088 37.9999 10.6748 37.9999 22.9607V35.5666H23.5402C11.0495 35.5666 0.923828 25.4409 0.923828 12.9502L0.923828 0.715088Z" fill="#4975FB"/>
+					</svg>
+					<svg class="rect_bottom_right lg_hidden"
+					     width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path opacity="0.9" fill-rule="evenodd" clip-rule="evenodd" d="M63.9438 0.123058C29.3534 0.544457 1.39197 28.5059 0.970692 63.0965L38.0534 63.0965C38.4649 48.9833 49.8307 37.6174 63.9438 37.2058L63.9438 0.123058Z" fill="#4975FB"/>
+					</svg>
+
 					<p class="flip-text">
-						Recive your funds & run your business with fun and funds. Great job!
+						Recive your funds <br>& run your business with fun and funds. <br/> Great job!
 					</p>
 				</div>
 			</li>
@@ -774,7 +740,7 @@
 					data-aos-easing="ease-in-out"
 					data-aos-anchor="#industries"
 			>
-				<img data-src="./images/slider.gif" alt="slider">
+				<img src="./images/slider.gif" alt="slider">
 				<button type="button" class="btn sm_visible">Learn more</button>
 				<!--				<div class="slider">-->
 				<!--					<div class="slider_card  slider_card_0">-->
@@ -803,7 +769,6 @@
 				<!--					</div>-->
 				<!--				</div>-->
 			</div>
-
 		</div>
 	</div>
 </section>

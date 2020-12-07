@@ -6,11 +6,10 @@ $(function () {
 	const dropLabel = $('.drop_label');
 
 	const handlerChange = (e) => {
-		const filesList = e.target.files;
-		preparingData = filesList;
-		const fileListArr = Object.values(filesList);
+		preparingData =  e.target.files;
+		const fileListArr = Object.values(e.target.files);
 
-		if (fileListArr.length) {
+		if (fileListArr.length > 0) {
 			let currentName;
 			$( ".drop_file").remove();
 			let markup = '';
