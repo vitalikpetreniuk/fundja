@@ -344,6 +344,8 @@ button {
         flex-basis: 50%; }
   .section.section_reviews .col--right {
     overflow: hidden;
+    position: relative;
+    top: 50px;
     -ms-flex-preferred-size: 25%;
         flex-basis: 25%; }
 
@@ -797,8 +799,7 @@ button {
   width: 493px;
   height: 70px;
   background: #FFFFFF;
-  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.07);
-          box-shadow: 0 0 30px rgba(0, 0, 0, 0.07);
+  -webkit-filter: drop-shadow( 0 0 30px rgba(0, 0, 0, 0.07));filter: drop-shadow( 0 0 30px rgba(0, 0, 0, 0.07));
   border-radius: 25px;
   border: none;
   padding: 0 30px;
@@ -807,8 +808,7 @@ button {
   line-height: 70px;
   color: rgba(50, 77, 161, 0.5); }
   .form_control:active, .form_control:focus {
-    -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.07);
-            box-shadow: 0 0 30px rgba(0, 0, 0, 0.07); }
+    -webkit-filter: drop-shadow( 0 0 30px rgba(0, 0, 0, 0.07));filter: drop-shadow( 0 0 30px rgba(0, 0, 0, 0.07)); }
   .form_control::-webkit-input-placeholder {
     color: rgba(50, 77, 161, 0.5); }
   .form_control::-moz-placeholder {
@@ -901,8 +901,9 @@ button {
   border-radius: 25px;
   border: none;
   padding: 0 30px;
-  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.07);
-          box-shadow: 0 0 30px rgba(0, 0, 0, 0.07);
+  -webkit-filter: drop-shadow( 0 0 30px rgba(0, 0, 0, 0.07));filter: drop-shadow( 0 0 30px rgba(0, 0, 0, 0.07));
+  /*-webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.17);*/
+  /*        box-shadow: 0 0 30px rgba(0, 0, 0, 0.17);*/
   font-family: helveticaRegular, sans-serif;
   font-size: 25px;
   line-height: 1;
@@ -972,15 +973,16 @@ button {
   opacity: 0; }
 
 .form_wrapper {
+  display: -ms-grid;
   display: grid;
   grid-gap: 30px;
   grid-template-areas: "email phone"
- "firstName lastName"
- "company ."
- "street city"
- "state code"
- "years ."
- "file file"; }
+  "firstName lastName"
+  "company ."
+  "street city"
+  "state code"
+  "years ."
+  "file file"; }
   @media (max-width: 1024px) {
     .form_wrapper {
       display: block; }
@@ -1377,8 +1379,12 @@ button {
       .section.user-data-form .logo svg {
         width: 145px;
         height: auto; }
+    .section.user-data-form .form_wrapper {
+      margin-right: 25px;
+      margin-left: 25px;
+    }
     .section.user-data-form .container {
-      padding: 0 25px; }
+      padding: 0; }
     .section.user-data-form .drop_container .form__error,
     .section.user-data-form .form__error {
       font-size: 9px;
@@ -1432,12 +1438,12 @@ button {
           width: 20px;
           height: 20px; }
     .section.user-data-form .btn {
-      width: 100%;
+      width: calc(100% - 50px);
+      margin: 0 auto;
       padding: 0 102px;
       height: 65px;
       font-size: 21px;
       line-height: 21px;
-      margin-bottom: 0;
       border-radius: 30px; }
     .section.user-data-form .form_control {
       height: 55px;
@@ -1605,11 +1611,13 @@ button {
     .blogs_page .blogs.section.blogs--top {
       padding-top: 150px;
       padding-bottom: 140px; }
-  .blogs_page .blogs_list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 80px;
-    grid-row-gap: 60px; }
+.blogs_page .blogs_list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 80px 1fr 80px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 80px;
+  grid-row-gap: 60px; }
   .blogs_page .blogs_card {
     border-radius: 45px;
     background: #FFFFFF;
@@ -2135,7 +2143,9 @@ button {
   display: none; }
 
 .layout {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 80px 350px;
   grid-template-columns: 1fr 350px;
   max-width: 1600px;
   padding: 98px 20px 150px;

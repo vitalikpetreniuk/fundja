@@ -254,18 +254,30 @@
 @media (max-width: 1024px) {
   .header_mobile .light_char {
     fill: #fff; }
+  .flip_card {
+    width: 180px;
+    height: 196px;
+    border-radius: 21px;
+  }
+  .flip_card .flip_title {
+    font-weight: 900;
+    font-size: 18px;
+    bottom: 35px;
+    line-height: 18px;
+    }
   .flip_card .back {
     font-size: 17px;
     line-height: 130%;
     padding: 48px 16px 50px 16px; }
+
   .flip_card.flip_card--second .back {
     font-size: 17px;
     line-height: 130%;
-    padding: 48px 10px 50px 10px; }
+    padding: 48px 16px 50px; }
   .flip_card.flip_card--third .back {
     font-size: 17px;
     line-height: 130%;
-    padding: 48px 16px 50px 15px; }
+    padding: 48px 9px 50px; }
   .flip_list .rect_top_left--top {
     top: -34px;
     left: -34px; }
@@ -404,23 +416,33 @@
     display: block;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-bottom: 45px; }
+    margin-bottom: 50px; }
   .flip_card {
     margin: auto; }
   .flip_card--first,
   .flip_card--second {
-    margin-bottom: 50px; }
+    margin-bottom: 30px; }
     .flip_card--first:after,
     .flip_card--second:after {
-      width: 30px;
-      height: 20px;
+      width: 14px;
+      height: 22px;
       top: initial;
-      bottom: -36px;
+      bottom: -27px;
       right: initial;
       left: 50%;
       -webkit-transform: rotate(90deg) translateY(14px);
               transform: rotate(90deg) translateY(14px);
     }
+
+  .flip_card.flip_card--first .front img {
+    margin-bottom: 37px;
+  }
+  .flip_card.flip_card--second .front img {
+    margin-bottom: 51px;
+  }
+  .flip_card.flip_card--third .front img {
+    margin-bottom: 39px;
+  }
   .why {
     min-height: 450px;
     text-align: left; }
@@ -608,6 +630,7 @@
         flex-basis: 100%;
     text-align: center; }
   .section.section_reviews .col--right {
+    top: 0;
     min-height: 300px; }
   .section.section_reviews .col--left {
     margin-bottom: 20px; }
