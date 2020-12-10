@@ -13,7 +13,7 @@
 </head>
 <body class="body">
 
-<section id="userForm" class="section user-data-form">
+<section id="userForm" class="section user-data-form obligations">
 	<svg
 			xmlns="http://www.w3.org/2000/svg"
 			width="166" height="470"
@@ -132,9 +132,15 @@
 					data-aos-easing="ease-in-out"
 					class="title text-center"
 			>
-				Tell us about you
+				Get Pre-Approved <br>
+				No Obligation
 			</h3>
 			<div class="form_wrapper">
+				<div class="form_group form_group_full-name">
+					<label for="fullName"></label>
+					<input id="fullName" type="email" class="form_control" placeholder="Full Name">
+					<div class="form__error is_error">I am error message for Full Name field</div>
+				</div>
 				<div class="form_group form_group_email">
 					<label for="email"></label>
 					<input id="email" type="email" class="form_control" placeholder="Email Address">
@@ -142,95 +148,18 @@
 				</div>
 				<div class="form_group form_group_phone">
 					<label for="phone"></label>
-					<input id="phone" type="email" class="form_control" placeholder="Cell Phone Numbers">
-					<div class="form__error is_error">I am error message for Cell Phone Number field</div>
+					<input id="phone" type="email" class="form_control" placeholder="Phone">
+					<div class="form__error is_error">I am error message for Phone field</div>
 				</div>
-
-				<div class="form_group form_group_firstName">
-					<label for="firstName"></label>
-					<input id="firstName" type="text" class="form_control" placeholder="First Name">
-					<div class="form__error  is_error">I am error message for First Name field</div>
-				</div>
-				<div class="form_group form_group_lastName">
-					<label for="lastName"></label>
-					<input id="lastName" type="text" class="form_control" placeholder="Last Name">
-					<div class="form__error  is_error">I am error message for Last Name field</div>
-				</div>
-
 				<div class="form_group form_group_company">
 					<label for="companyName"></label>
 					<input id="companyName" type="text" class="form_control" placeholder="Company Name">
 					<div class="form__error  is_error">I am error message for Company Name field</div>
 				</div>
-				<div></div>
-				<div class="form_group form_group_street">
-					<label for="streetAddress"></label>
-					<input id="streetAddress" type="text" class="form_control" placeholder="Street Address">
-					<div class="form__error  is_error">I am error message for Street Address field</div>
-				</div>
-				<div class="form_group form_group_city">
-					<label for="city"></label>
-					<input id="city" type="text" class="form_control" placeholder="City">
-					<div class="form__error  is_error">I am error message for City field</div>
-				</div>
-
-				<div class="form_group form_group_state">
-					<label for="State"></label>
-					<input id="State" type="text" class="form_control" placeholder="State/Region/Province">
-					<div class="form__error  is_error">I am error message for State/Region/Province field</div>
-				</div>
-				<div class="form_group form_group_code">
-					<label for="code"></label>
-					<input id="code" type="text" class="form_control" placeholder="Postal/Zip Code">
-					<div class="form__error  is_error">I am error message for Postal/Zip Code field</div>
-				</div>
 				<div class="form_group form_group_years">
 					<label for="Yeas"></label>
 					<input id="Yeas" type="text" class="form_control" placeholder="How many years in business?">
 					<div class="form__error  is_error">I am error message for Years in business field</div>
-				</div>
-				<div></div>
-
-				<div class="form_group form_group_file drop_container">
-					<label for="dropFiles" class="drop_label">
-						<span class="drop-placeholder">Drop your files</span>
-						<input id="dropFiles" multiple type="file" class="form_control drop_input"
-						       placeholder="Drop your files">
-						<span class="drop_img">
-							<svg class="drop_bg" xmlns="http://www.w3.org/2000/svg" width="82" height="82" viewBox="0 0 82 82"
-							     fill="none">
-									<rect opacity="0.5" x="0.75" y="0.75" width="80.5" height="80.5" rx="9.25"
-									      stroke="#324DA1" stroke-width="1.5"
-									      stroke-dasharray="5.15 5.36"/>
-									<g opacity="0.35">
-									<path fill-rule="evenodd" clip-rule="evenodd"
-									      d="M29.7188 42.2188C29.9094 42.2188 30.0922 42.2945 30.227 42.4293C30.3618 42.5641 30.4375 42.7469 30.4375 42.9375V47.9688C30.4375 48.35 30.589 48.7156 30.8585 48.9852C31.1281 49.2548 31.4938 49.4062 31.875 49.4062H49.125C49.5062 49.4062 49.8719 49.2548 50.1415 48.9852C50.411 48.7156 50.5625 48.35 50.5625 47.9688V42.9375C50.5625 42.7469 50.6382 42.5641 50.773 42.4293C50.9078 42.2945 51.0906 42.2188 51.2812 42.2188C51.4719 42.2188 51.6547 42.2945 51.7895 42.4293C51.9243 42.5641 52 42.7469 52 42.9375V47.9688C52 48.7312 51.6971 49.4625 51.1579 50.0017C50.6188 50.5408 49.8875 50.8438 49.125 50.8438H31.875C31.1125 50.8438 30.3812 50.5408 29.8421 50.0017C29.3029 49.4625 29 48.7312 29 47.9688V42.9375C29 42.7469 29.0757 42.5641 29.2105 42.4293C29.3453 42.2945 29.5281 42.2188 29.7188 42.2188Z"
-									      fill="#324DA1"/>
-									<path fill-rule="evenodd" clip-rule="evenodd"
-									      d="M36.187 41.5002C36.3218 41.3654 36.5046 41.2897 36.6952 41.2897C36.8857 41.2897 37.0685 41.3654 37.2033 41.5002L40.4995 44.7964L43.7957 41.5002C43.862 41.4315 43.9413 41.3768 44.029 41.3391C44.1167 41.3014 44.211 41.2816 44.3064 41.2808C44.4019 41.28 44.4965 41.2981 44.5848 41.3343C44.6732 41.3704 44.7534 41.4238 44.8209 41.4913C44.8884 41.5588 44.9418 41.639 44.9779 41.7273C45.014 41.8157 45.0322 41.9103 45.0314 42.0058C45.0306 42.1012 45.0107 42.1955 44.9731 42.2832C44.9354 42.3709 44.8807 42.4502 44.812 42.5165L41.0084 46.3216C40.9416 46.3885 40.8623 46.4416 40.775 46.4778C40.6877 46.5141 40.594 46.5327 40.4995 46.5327C40.405 46.5327 40.3114 46.5141 40.224 46.4778C40.1367 46.4416 40.0574 46.3885 39.9906 46.3216L36.187 42.5165C36.0523 42.3817 35.9766 42.1989 35.9766 42.0083C35.9766 41.8178 36.0523 41.635 36.187 41.5002Z"
-									      fill="#324DA1"/>
-									<path fill-rule="evenodd" clip-rule="evenodd"
-									      d="M40.5 32.1562C40.6906 32.1562 40.8734 32.232 41.0082 32.3668C41.143 32.5016 41.2188 32.6844 41.2188 32.875V44.375C41.2188 44.5656 41.143 44.7484 41.0082 44.8832C40.8734 45.018 40.6906 45.0938 40.5 45.0938C40.3094 45.0938 40.1266 45.018 39.9918 44.8832C39.857 44.7484 39.7812 44.5656 39.7812 44.375V32.875C39.7812 32.6844 39.857 32.5016 39.9918 32.3668C40.1266 32.232 40.3094 32.1562 40.5 32.1562Z"
-									      fill="#324DA1"/>
-									</g>
-									</svg>
-
-						<svg class="drop_list_bg" xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-							<g opacity="0.35">
-							<path fill-rule="evenodd" clip-rule="evenodd"
-							      d="M0.625 8.75C0.79076 8.75 0.949732 8.81585 1.06694 8.93306C1.18415 9.05027 1.25 9.20924 1.25 9.375V13.75C1.25 14.0815 1.3817 14.3995 1.61612 14.6339C1.85054 14.8683 2.16848 15 2.5 15H17.5C17.8315 15 18.1495 14.8683 18.3839 14.6339C18.6183 14.3995 18.75 14.0815 18.75 13.75V9.375C18.75 9.20924 18.8158 9.05027 18.9331 8.93306C19.0503 8.81585 19.2092 8.75 19.375 8.75C19.5408 8.75 19.6997 8.81585 19.8169 8.93306C19.9342 9.05027 20 9.20924 20 9.375V13.75C20 14.413 19.7366 15.0489 19.2678 15.5178C18.7989 15.9866 18.163 16.25 17.5 16.25H2.5C1.83696 16.25 1.20107 15.9866 0.732233 15.5178C0.263392 15.0489 0 14.413 0 13.75V9.375C0 9.20924 0.065848 9.05027 0.183058 8.93306C0.300269 8.81585 0.45924 8.75 0.625 8.75Z"
-							      fill="#324DA1"/>
-							<path fill-rule="evenodd" clip-rule="evenodd"
-							      d="M6.25135 8.1244C6.36856 8.00723 6.5275 7.94141 6.69323 7.94141C6.85895 7.94141 7.0179 8.00723 7.1351 8.1244L10.0014 10.9906L12.8676 8.1244C12.9253 8.0647 12.9942 8.01709 13.0705 7.98434C13.1467 7.95158 13.2287 7.93434 13.3117 7.93362C13.3947 7.9329 13.477 7.94871 13.5538 7.98014C13.6306 8.01156 13.7004 8.05797 13.7591 8.11665C13.8178 8.17533 13.8642 8.24512 13.8956 8.32193C13.927 8.39874 13.9429 8.48104 13.9421 8.56402C13.9414 8.64701 13.9242 8.72902 13.8914 8.80528C13.8587 8.88153 13.811 8.95049 13.7514 9.00815L10.4439 12.3169C10.3858 12.3751 10.3168 12.4213 10.2409 12.4528C10.165 12.4843 10.0836 12.5005 10.0014 12.5005C9.91914 12.5005 9.83774 12.4843 9.76181 12.4528C9.68588 12.4213 9.61691 12.3751 9.55885 12.3169L6.25135 9.00815C6.13418 8.89094 6.06836 8.732 6.06836 8.56627C6.06836 8.40055 6.13418 8.2416 6.25135 8.1244Z"
-							      fill="#324DA1"/>
-							<path fill-rule="evenodd" clip-rule="evenodd"
-							      d="M10 0C10.1658 0 10.3247 0.065848 10.4419 0.183058C10.5592 0.300268 10.625 0.45924 10.625 0.625V10.625C10.625 10.7908 10.5592 10.9497 10.4419 11.0669C10.3247 11.1842 10.1658 11.25 10 11.25C9.83424 11.25 9.67527 11.1842 9.55806 11.0669C9.44085 10.9497 9.375 10.7908 9.375 10.625V0.625C9.375 0.45924 9.44085 0.300268 9.55806 0.183058C9.67527 0.065848 9.83424 0 10 0Z"
-							      fill="#324DA1"/>
-							</g>
-							</svg>
-						</span>
-					</label>
-					<div class="form__error  is_error">I am error message for Drop File field</div>
 				</div>
 			</div>
 			<div class="d-flex justify-center">

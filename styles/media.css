@@ -1,4 +1,7 @@
 @media (max-width: 1500px) {
+  section#cash {
+    padding-top: 80px;
+  }
   .hero {
     min-height: 514px; }
     .hero_info {
@@ -53,6 +56,14 @@
       color: #324DA1; }
   .flip_list {
     width: 1060px; }
+  .card_date {
+    font-size: 14px;
+    line-height: 21px;
+    flex-basis: calc(100% - 108px);
+  }
+  .card_action {
+    flex-basis: 108px;
+  }
   .why {
     padding-top: 110px;
     min-height: 512px; }
@@ -77,7 +88,7 @@
     margin-bottom: 8px; }
   .industries_text {
     font-size: 15px;
-    padding-right: 78px;
+    padding-right: 45px;
     margin-bottom: 22px; }
   .cash {
     overflow: hidden; }
@@ -246,12 +257,66 @@
     font-size: 12px;
     line-height: 1.5;
     padding-right: 0; }
+  .card_date {
+    font-size: 12px;
+    line-height: 21px;
+  }
+  .blogs_page .card_body {
+    padding: 19px 19px 6px;
+  }
   .up_btn {
     right: 12px; }
   .main_nav .nav_list {
     right: calc((100vw - 1150px) / 2 + 40px); } }
 
+@media (max-width: 1200px) and (min-width: 1024px) {
+  .blogs_page .blogs_list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 1200px) and (min-width: 1024px) {
+  .hero_blog_title {
+    width: 62%;
+  }
+}
 @media (max-width: 1024px) {
+
+  .flip_card .back .rect_top_left {
+    top: -4px;
+    left: -4px;
+  }
+  .flip_card .back .rect_top_right {
+    top: -4px;
+    right: -4px; }
+  .flip_card .back {
+    overflow: hidden;
+  }
+  .statistic_data {
+    width: 325px;
+    margin: 0 auto;
+  }
+  [data-aos="my-animation-1"] {
+    -webkit-transform: translateX(-228px);
+    transform: translateX(-228px);
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform; }
+  [data-aos="my-animation-2"] {
+    -webkit-transform: translateX(-254px);
+    transform: translateX(-254px);
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform; }
+  [data-aos="my-animation-3"] {
+    -webkit-transform: translateX(-228px);
+    transform: translateX(-228px);
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform; }
+
   .header_mobile .light_char {
     fill: #fff; }
   .flip_card {
@@ -366,12 +431,7 @@
     transition: background-color 0.4s ease 0.2s;
     -webkit-box-shadow: none !important;
             box-shadow: none !important; }
-  .btn {
-    height: 62px;
-    font-size: 21px;
-    line-height: 21px;
-    border-radius: 30px;
-    width: 100%; }
+
   .hero_title {
     font-size: 46.2633px;
     line-height: 120%;
@@ -516,7 +576,7 @@
       left: 0; }
     .statistic .statistic_item {
       left: 0 !important;
-      padding: 26px 0 45px 20px; }
+      padding: 26px 0 45px; }
       .statistic .statistic_item:nth-child(1) {
         width: 90%; }
         .statistic .statistic_item:nth-child(1) .statistic_title {
