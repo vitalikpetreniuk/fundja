@@ -1,4 +1,25 @@
 @media (max-width: 1500px) {
+[data-aos="my-animation-1"] {
+  -webkit-transform: translateX(-255px);
+  transform: translateX(-255px);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform; }
+[data-aos="my-animation-2"] {
+  -webkit-transform: translateX(-316px);
+  transform: translateX(-316px);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform; }
+[data-aos="my-animation-3"] {
+  -webkit-transform: translateX(-355px);
+  transform: translateX(-355px);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform; }
   section#cash {
     padding-top: 80px;
   }
@@ -194,8 +215,7 @@
       height: 52px;
       width: 370px;
       font-size: 18px;
-      line-height: 1;
-      padding: 18px 22px; }
+      line-height: 1; }
       .section_calculator .col--left .form_control::-webkit-input-placeholder {
         font-size: 18px;
         line-height: 1; }
@@ -246,7 +266,8 @@
     top: -25px;
     left: -25px; }
   .slider_wrapper img {
-    max-width: 100%; } }
+    max-width: 100%; }
+}
 
 @media (max-width: 1279px) {
   .body {
@@ -646,10 +667,19 @@
   .testimonials_card:focus,
   .testimonials_list:focus {
     outline: none; }
+  #reviews .container {
+    padding: 0;
+  }
+  #reviews .row {
+    margin: 0 !important;
+  }
+  #reviews .slick-slider .slick-list {
+    overflow: visible;
+  }
   .mobile_review {
     margin: auto;
-    padding: 5px 15px 5px;
-    width: 305px; }
+    padding: 5px 0 5px;
+    width: 100%; }
     .mobile_review .testimonials_card {
       width: 235px;
       margin: 35px; }
@@ -673,12 +703,12 @@
       background-size: contain;
       background-position: center center; }
     .mobile_review .slick-prev {
-      left: -16px;
+      left: 25px;
       -webkit-transform: rotate(180deg) translateY(-50%);
               transform: rotate(180deg) translateY(-50%);
       z-index: 1; }
     .mobile_review .slick-next {
-      right: -16px;
+      right: 25px;
       top: 53%;
       -webkit-transform: translateY(-50%);
               transform: translateY(-50%);
@@ -693,7 +723,7 @@
     top: 0;
     min-height: 300px; }
   .section.section_reviews .col--left {
-    margin-bottom: 20px; }
+    margin-bottom: 40px; }
   .section.section_reviews {
     padding-bottom: 74px; }
     .section.section_reviews .title.approve_title {
@@ -730,7 +760,7 @@
       padding: 0 15px; }
     .section.section_calculator .form__error {
       top: 0; }
-  .calculator .btn {
+  .form_btn-wrap {
     margin-top: 44px; }
   .footer {
     padding-top: 50px; }
@@ -823,12 +853,21 @@
     .copyright .row {
       margin: 0; }
     .copyright .col {
-      padding: 20px 0; }
-    .copyright .ursa_logo {
-      display: block; }
+      padding: 0 }
+  .copyright .col .ursa_logo {
+    padding: 17px 0 15px }
+      .copyright .ursa_logo {
+        width: 165px;
+      }
       .copyright .ursa_logo img {
-        width: 150px; } }
+        width: 80px; } }
 
+@media (max-width: 850px) {
+  .mobile_review .slick-prev {
+    left: 16px;}
+  .mobile_review .slick-next {
+    right: 16px;}
+}
 @media (max-width: 450px) {
   .section_reviews .col--right img {
     width: 185%;
