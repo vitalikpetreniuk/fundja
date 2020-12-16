@@ -33,7 +33,7 @@
       line-height: 15px;
       font-size: 22px; }
     .hero_text {
-      max-width: 300px;
+      max-width: 302px;
       font-size: 12px;
       line-height: 1.2;
       margin-bottom: 28px; }
@@ -260,15 +260,32 @@
   .up_btn {
     width: 40px;
     height: 40px;
-    right: -26px;
+    right: 15px;
     top: -8px; }
   .flip_list .rect_top_left--top {
     top: -25px;
     left: -25px; }
   .slider_wrapper img {
     max-width: 100%; }
-}
 
+  .copyright .ursa_logo {
+    width: 158px;
+  }
+  .copyright .ursa_logo span{
+    font-family: helveticaRegular, sans-serif;
+    font-size: 10px;
+    line-height: 13px;
+    color: rgba(255,255,255,0.85)
+  }
+  .copyright .col  {
+    font-size: 14px;
+    line-height: 150%;
+  }
+  .copyright .col .ursa_logo {
+    padding: 17px 0 15px }
+  .copyright .ursa_logo img {
+    width: 83px; }
+}
 @media (max-width: 1279px) {
   .body {
     overflow: hidden; }
@@ -289,13 +306,10 @@
     right: 12px; }
   .main_nav .nav_list {
     right: calc((100vw - 1150px) / 2 + 40px); } }
-
 @media (max-width: 1200px) and (min-width: 1024px) {
   .blogs_page .blogs_list {
     grid-template-columns: repeat(2, 1fr);
   }
-}
-@media (max-width: 1200px) and (min-width: 1024px) {
   .hero_blog_title {
     width: 62%;
   }
@@ -468,7 +482,7 @@
     font-family: helveticaRegular, sans-serif;
     font-size: 17.3488px;
     line-height: 150%;
-    margin: 0 auto 60px;
+    margin: 0 auto 57px;
     text-align: center; }
   .hero_info {
     padding-top: 125px; }
@@ -627,7 +641,7 @@
       bottom: 16px;
       top: inherit;
       left: initial;
-      right: 30px; }
+      right: 8px; }
   .section.section_reviews {
     padding-top: 66px; }
     .section.section_reviews .title {
@@ -747,19 +761,30 @@
   .section.section_calculator {
     text-align: left;
     padding-bottom: 77px; }
+    .section.section_calculator .form_group {
+      margin-bottom: 25px;
+    }
+  .section.section_calculator .form_btn-wrap {
+    margin-top: 40px;
+  }
+    .form_control {
+      padding: 0 20px;
+    }
+    .form__error {
+      left: 20px;
+    }
     .section.section_calculator .title {
       text-align: left !important;
       max-width: 80%;
-      margin-bottom: 24px;
+      margin-left: 20px;
+      margin-bottom: 48px;
       font-size: 35px;
-      line-height: 35px; }
+      line-height: 120%; }
     .section.section_calculator .form_control {
       width: 100%;
       margin-bottom: 0; }
     .section.section_calculator .col--left {
       padding: 0 15px; }
-    .section.section_calculator .form__error {
-      top: 0; }
   .form_btn-wrap {
     margin-top: 44px; }
   .footer {
@@ -854,27 +879,34 @@
       margin: 0; }
     .copyright .col {
       padding: 0 }
-  .copyright .col .ursa_logo {
-    padding: 17px 0 15px }
-      .copyright .ursa_logo {
-        width: 165px;
-      }
-      .copyright .ursa_logo img {
-        width: 80px; } }
-
+  .copyright .col {
+    font-family: helveticaMedium, sans-serif;
+    font-size: 12px;
+    line-height: 150%;
+  }
+  .copyright .ursa_logo {
+    width: 153px;
+  }
+}
 @media (max-width: 850px) {
   .mobile_review .slick-prev {
     left: 16px;}
   .mobile_review .slick-next {
     right: 16px;}
+  .copyright .col {
+    font-family: helveticaMedium, sans-serif;
+    font-size: 12px;
+    line-height: 150%;
+  }
+  .copyright .ursa_logo span{
+    font-family: helveticaRegular, sans-serif;
+    font-size: 10px;
+    line-height: 13px;
+    color: rgba(255,255,255,0.85)
+  }
 }
 @media (max-width: 450px) {
   .section_reviews .col--right img {
     width: 185%;
     height: auto; } }
 
-@media (max-width: 375px) {
-  .copyright .col {
-    font-size: 11.6px; } }
-
-/*# sourceMappingURL=media.css.map */

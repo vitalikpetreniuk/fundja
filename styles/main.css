@@ -819,6 +819,12 @@ button {
   position: relative;
  }
 
+.section.section_calculator .form_group {
+  margin-bottom: 45px;
+}
+.section.section_calculator .form_btn-wrap {
+  margin: 55px 0 0;
+}
 .drop_list_bg {
   display: none; }
 
@@ -851,8 +857,14 @@ button {
 .calculator {
   position: relative; }
   .form_btn-wrap {
-    margin-top: 35px; }
-
+    width: 146px;
+    margin: 35px auto
+  }
+.form_btn-wrap input {
+  display: inline;
+  box-shadow: none; }
+.form_btn-wrap input:focus {
+  box-shadow: none; }
 .form__error {
   display: none;
   position: absolute;
@@ -1025,6 +1037,9 @@ button {
   display: block;
 }
   @media (max-width: 1024px) {
+    .form_btn-wrap {
+      width: 100%;
+    }
     .obligations .form_wrapper .form_group {
       width: 100%;
     }
@@ -1322,8 +1337,7 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-
-.ready_title {
+ .ready_title {
   font-weight: 900;
   font-size: 81px !important;
   line-height: 75px;
@@ -1337,7 +1351,7 @@ button {
       margin-bottom: 24px; } }
   @media (max-width: 1024px) {
     .ready_title {
-      font-size: 38px !important;
+      font-size: 36px !important;
       text-align: center;
       margin-bottom: 20px !important; } }
 
@@ -1418,7 +1432,7 @@ button {
      .form__error {
       font-size: 9px;
       bottom: -5px;
-      left: 33px;
+      left: 31px;
       top: auto; }
     .section.user-data-form .form_group {
       margin-bottom: 12px !important; }
@@ -1563,6 +1577,8 @@ button {
 .copyright {
   background: #324da1;
   color: #fff;
+  font-size: 12px;
+  line-height: 150%;
   font-family: helveticaMedium, sans-serif; }
   .copyright .row {
     -webkit-box-pack: justify;
@@ -1877,12 +1893,13 @@ button {
 .card_bottom {
   width: 100%;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 .card_date {
   font-family: helveticaMedium, sans-serif, sans-serif;
   font-size: 20px;
-  line-height: 20px;
+  line-height: 26px;
   color: rgba(50,78,161, 0.65);
   flex-basis: calc(100% - 140px);
   text-align: right;
@@ -2180,10 +2197,10 @@ button {
   object-fit: contain;
 }
 .ursa_logo span {
-  font-family: Arial, sans-serif;
-  font-weight: 300;
-  font-size: 12px;
-  line-height: 18px;
+  font-family: "helveticaRegular", sans-serif;
+  text-align: left;
+  font-size: 10.1603px;
+  line-height: 13px;
   letter-spacing: 0.02em;
 }
 .hero_blog_title {
@@ -2825,7 +2842,7 @@ section#statistic
   font-family: helveticaBold, sans-serif;
   -webkit-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
-  line-height: 1.35;
+  line-height: 1.675;
   font-size: 14px;
   margin-bottom: 10px; }
 
@@ -2836,7 +2853,9 @@ section#statistic
   line-height: 1;
   margin-bottom: 20px;
   font-family: helveticaBold, sans-serif; }
-
+.section.user-data-form.obligations .title {
+  line-height: 120%;
+}
 .subtitle {
   font-size: 25px;
   line-height: 25px;
@@ -3009,7 +3028,7 @@ section#statistic
   .fixed_text {
     font-size: 10px;
     line-height: 1.35;
-    margin-bottom: 7px; }
+    margin-bottom: 4px; }
   .fixed_btn {
     width: 124px;
     height: 99px;
@@ -3017,7 +3036,7 @@ section#statistic
     padding: 12px; }
   .fixed_btn .btn {
     font-size: 12px;
-    padding: 9px 22px;
+    padding: 7px 19px;
     width: auto; } }
 
 .up_btn {
@@ -3119,11 +3138,14 @@ img[data-src] {
   .lg_visible.moon {
     display: block;
   }
-  .industries.section, section#cash, section#statistic, .section.section_reviews
+  .industries.section, section#cash, section#statistic
   {
     padding-top: 80px !important;
   }
-  .section.section_reviews, .section.section_calculator
+  .section.section_reviews {
+    padding-top: 65px !important;
+  }
+  .section.section_calculator
   {
     padding-bottom: 80px !important;
   }
